@@ -3,6 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:view="clr-namespace:Goggles.View"
              mc:Ignorable="d"
              d:DesignHeight="300" d:DesignWidth="300">
     <StackPanel>
@@ -13,5 +14,8 @@
         <TextBlock Text="{Binding Url}" Foreground="BlueViolet" />
         <TextBlock Text="{Binding CacheUrl}" Foreground="BlueViolet" />
         <TextBlock Text="{Binding Content}" Foreground="Violet" />
+        <TextBlock Text="{Binding ImageSource}" Foreground="Red"></TextBlock>
+        <Image Source="{Binding ImageSource}" HorizontalAlignment="Left"></Image>
+        <!--<view:RoundPictureControl Height="100" Width="100" ImageSrc="{Binding ImageSource}" />-->
     </StackPanel>
 </UserControl>

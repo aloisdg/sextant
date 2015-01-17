@@ -29,10 +29,10 @@
             <Button Style="{DynamicResource SquareButtonStyle}"
                 Grid.Column="1" Content="Search" Command="{Binding Search}" IsDefault="True"></Button>
         </Grid>
-        <ListBox Grid.Row="1" ItemsSource="{Binding Results}" x:Name="ResultsBox">
+        <ListBox Grid.Row="1" ItemsSource="{Binding SextantItems}" x:Name="ResultsBox">
             <ListBox.ItemTemplate>
                 <DataTemplate>
-                   <view:ResultItemControl />
+                       <view:ResultItemControl />
                 </DataTemplate>
             </ListBox.ItemTemplate>
 
