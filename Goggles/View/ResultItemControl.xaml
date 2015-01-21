@@ -16,6 +16,6 @@
         <TextBlock Text="{Binding Content}" Foreground="Violet" />
         <TextBlock Text="{Binding ImageSource}" Foreground="Red"></TextBlock>
         <Image Source="{Binding ImageSource}" HorizontalAlignment="Left"></Image>
-        <!--<view:RoundPictureControl Height="100" Width="100" ImageSrc="{Binding ImageSource}" />-->
+        <view:RoundPictureControl Height="100" Width="100" ImageSrc="{Binding ImageSource}" />
     </StackPanel>
 </UserControl>

@@ -33,7 +33,8 @@ namespace Goggles.Model
             Title = result.Title;
             TitleNoFormatting = result.TitleNoFormatting;
             Content = result.Content;
-            ImageSource = GetImageFromHtml(result.UnescapedUrl);
+            //ImageSource = GetImageFromHtml(result.UnescapedUrl);
+            ImageSource = "http://img.xooimage.com/files105/8/2/6/131118_jdgbaffe-43f39d2.jpg";
         }
 
         private static string GetImageFromHtml(string url)
