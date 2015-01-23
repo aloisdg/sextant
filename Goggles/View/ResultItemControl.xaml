@@ -15,7 +15,9 @@
         <TextBlock Text="{Binding CacheUrl}" Foreground="BlueViolet" />
         <TextBlock Text="{Binding Content}" Foreground="Violet" />
         <TextBlock Text="{Binding ImageSource}" Foreground="Red"></TextBlock>
-        <Image Source="{Binding ImageSource}" HorizontalAlignment="Left"></Image>
-        <view:RoundPictureControl Height="100" Width="100" ImageSrc="{Binding ImageSource}" />
+        <!--<Image Source="{Binding ImageSource}" HorizontalAlignment="Left"></Image>-->
+        <!--<view:RoundPictureControl Height="100" Width="100" ImageSrc="{Binding DataContext,
+            RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type view:ResultItemControl}}}" />-->
+        <view:RoundPictureControl Height="100" Width="100" Element="{Binding DataContext, RelativeSource={RelativeSource Mode=FindAncestor, AncestorType={x:Type view:ResultItemControl}}}"/>
     </StackPanel>
 </UserControl>

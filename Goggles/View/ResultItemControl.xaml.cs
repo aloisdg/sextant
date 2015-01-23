@@ -23,6 +23,7 @@ namespace Goggles.View
         public ResultItemControl()
         {
             InitializeComponent();
+            //DataContext = this;
         }
     }
 }
